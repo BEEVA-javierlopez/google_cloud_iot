@@ -5,7 +5,7 @@ Google Cloud IoT testeting code with Paho and LocustIO
 
 Code to execute stress test:
 
-locust -i stresslocust.py
+locust -f stresslocust.py
 
 And then you have to control test using web browser.
 
@@ -18,11 +18,11 @@ To create a cluster of instances to increase test with more virtual devices:
 
 **Master instance (load this first)**
 
-locust -i stresslocust.py --master
+locust -f stresslocust.py --master
 
 **Slave instances**
 
-locust -i stresslocust.py --slave --master-host=ip_of_master
+locust -f stresslocust.py --slave --master-host=ip_of_master
 
 And then you have to control test using web browser.
 
