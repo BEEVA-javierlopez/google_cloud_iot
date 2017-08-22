@@ -7,7 +7,7 @@ Code to execute stress test:
 
 locust -i stresslocust.py
 
-And then you have to control test by web browser.
+And then you have to control test using web browser.
 
 http://localhost:8089
 
@@ -24,6 +24,6 @@ locust -i stresslocust.py --master
 
 locust -i stresslocust.py --slave --master-host=ip_of_master
 
-And then you have to control test by web browser.
+And then you have to control test using web browser.
 
 http://ip_of_master:8089
